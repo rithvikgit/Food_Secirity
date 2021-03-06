@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    tools:context=".ScanActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+        <RelativeLayout
+            android:id="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/draw1">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/fds_logo"
+                tools:ignore="ContentDescription" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:text="@string/vendor_scanner"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:typeface="normal"
+                tools:ignore="RelativeOverlap,RtlHardcoded" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/r"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r1">
+            <RelativeLayout
+                android:id="@+id/ir1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/draw1">
+                <TextView
+                    android:id="@+id/textEid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/ir2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/ir1"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/draw1">
+                <TextView
+                    android:id="@+id/textIncome"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r"
+            android:layout_marginTop="30dp">
+            <LinearLayout
+                android:id="@+id/l"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/draw1"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.2"
+                    android:gravity="center"
+                    android:text="@string/item"
+                    android:textStyle="bold"
+                    android:typeface="sans"
+                    tools:ignore="RtlHardcoded" />
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.9"
+                    android:gravity="center"
+                    android:text="@string/used_kg"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.9"
+                    android:gravity="center"
+                    android:text="@string/total_kg"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/l"
+                android:background="@drawable/white"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.2"
+                    android:gravity="center"
+                    android:text="@string/wheat"
+                    android:textStyle="bold"
+                    android:typeface="sans"
+                    tools:ignore="RtlHardcoded" />
+                <TextView
+                    android:id="@+id/wheatUsed"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.9"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+                <TextView
+                    android:id="@+id/wheatTotal"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.9"
+                    android:gravity="center"
+                    android:text="@string/_10"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/l1"
+                android:background="@drawable/white"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.2"
+                    android:gravity="center"
+                    android:text="@string/rice"
+                    android:textStyle="bold"
+                    android:typeface="sans"
+                    tools:ignore="RtlHardcoded" />
+                <TextView
+                    android:id="@+id/riceUsed"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.9"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+                <TextView
+                    android:id="@+id/riceTotal"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.9"
+                    android:gravity="center"
+                    android:text="@string/_10"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/l3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/l2"
+                android:background="@drawable/white"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.2"
+                    android:gravity="center"
+                    android:text="@string/oil"
+                    android:textStyle="bold"
+                    android:typeface="sans"
+                    tools:ignore="RtlHardcoded" />
+                <TextView
+                    android:id="@+id/oilUsed"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.9"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+                <TextView
+                    android:id="@+id/oilTotal"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.9"
+                    android:gravity="center"
+                    android:text="@string/_5"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/r5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r2"
+            android:layout_marginTop="8dp"
+            android:padding="8dp">
+            <Button
+                android:id="@+id/issueR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/draw1"
+                android:padding="18dp"
+                android:text="@string/issue_requirement"
+                android:textColor="#000" />
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/o"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/r5"
+            android:background="@drawable/white"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/vendorWheat"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.2"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:typeface="sans"
+                tools:ignore="RtlHardcoded" />
+            <TextView
+                android:id="@+id/vendorRice"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:typeface="sans" />
+            <TextView
+                android:id="@+id/vendorOil"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:typeface="sans" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
